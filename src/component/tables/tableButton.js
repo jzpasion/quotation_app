@@ -25,8 +25,8 @@ const TableButton = ({data}) => {
                 <tbody>
                     {data.map((resdata , index) =>(
                         <tr key={index}>
-                            <td>resdata.ITEM_NUMBER</td>
-                            <td>resdata.type</td>
+                            {/* <td>resdata.ITEM_NUMBER</td>
+                            <td>resdata.type</td> */}
                         </tr>
                     ))}
                 </tbody>

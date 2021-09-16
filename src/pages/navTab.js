@@ -2,11 +2,11 @@ import {React, useContext} from 'react'
 import {  Container } from 'react-bootstrap'
 import { globalItem } from '../component/global/global'
 import { Redirect } from 'react-router-dom'
-
+import TableButton from '../component/tables/tableButton'
 
 
 const NavTab = ({auth}) => {
-    const {user} = useContext(globalItem);
+    const {user ,quoteData} = useContext(globalItem);
 
     if(!auth){
         return <Redirect to="/"/>
@@ -15,7 +15,7 @@ const NavTab = ({auth}) => {
       
     return (
         <Container>
-
+            <TableButton data={quoteData} />
         </Container>
     //     <Tabs fill defaultActiveKey="inventory" id="uncontrolled-tab-example" className="mb-3">
     //         <Tab eventKey="inventory" title="Buttons">
