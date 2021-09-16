@@ -19,7 +19,6 @@ function App() {
   useEffect(() =>{
     document.body.style.backgroundColor = color
     socket.on("getAllQuote" , data=>{
-      //setQuoteData(data)
 
       setButtonData(data.filter((btn) => (
         btn.QUOTATION_TYPE === "Button"

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Table } from 'react-bootstrap'
 
-const TableMotorDriver = ({data}) => {
+const TableTools = ({data}) => {
     return (
         <div>
             <Table striped bordered hover responsive style={{marginTop: 15}}>
@@ -9,8 +9,6 @@ const TableMotorDriver = ({data}) => {
                     <tr>
                         <th>Item No</th>
                         <th>Type</th>
-                        <th>Power</th>
-                        <th>Voltage</th>
                         <th>Description</th>
                         <th>Part No</th>
                         <th>Manufacturer</th>
@@ -36,4 +34,4 @@ const TableMotorDriver = ({data}) => {
     )
 }
 
-export default TableMotorDriver
+export default TableTools

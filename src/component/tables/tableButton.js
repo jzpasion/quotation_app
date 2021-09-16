@@ -10,7 +10,7 @@ const TableButton = ({data}) => {
                         <th>Item No</th>
                         <th>Type</th>
                         <th>Color</th>
-                        <th>Description</th>
+                        <th>Description</th>                        
                         <th>Part No</th>
                         <th>Manufacturer</th>
                         <th>Supplier</th>
@@ -20,12 +20,15 @@ const TableButton = ({data}) => {
                         <th>Price (USD)</th>
                         <th>Weight</th>
                         <th>Datasheet</th>
+                        
                     </tr> 
                 </thead>
                 <tbody>
                     {data.map((resdata , index) =>(
                         <tr key={index}>
-
+                            <td>{resdata.ITEM_NUMBER}</td>
+                            <td>{resdata.TYPE}</td>
+                            
                         </tr>
                     ))}
                 </tbody>
