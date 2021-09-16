@@ -1,0 +1,22 @@
+.loginBox {
+  height: auto;
+  border-radius: 8px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #2e3359;
+  background-color: #f46e6f;
+}
+
+.loginImg {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  clip-path: circle(30% at center);
+  /* border-radius: 50%; */
+}
+
+h1 {
+  font-family: "PoppinsBlack";
+  text-align: center;
+  color: #2e3359;
+}

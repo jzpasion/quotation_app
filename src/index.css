@@ -1,13 +1,23 @@
+@font-face {
+  font-family: "PoppinsBlack";
+  src: local("PoppinsBlack"),
+    url(./component/font/PoppinsBlack.ttf) format("truetype");
+  src: local("PoppinsBold"),
+    url(./component/font/PoppinsBold.ttf) format("truetype");
+  src: local("PoppinsExtraBold"),
+    url(./component/font/PoppinsExtraBold.ttf) format("truetype");
+  src: local("PoppinMedium"),
+    url(./component/font/PoppinsMedium.ttf) format("truetype");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "PoppinsBlack";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
