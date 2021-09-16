@@ -1,7 +1,7 @@
 import React from 'react'
 import {Table} from 'react-bootstrap'
 
-const TableIndicator = () => {
+const TableConnectors = () => {
     return (
         <div>
             <Table striped bordered hover responsive style={{marginTop: 15}}>
@@ -9,8 +9,9 @@ const TableIndicator = () => {
                     <tr>
                         <th>Item No</th>
                         <th>Type</th>
-                        <th>Color</th>
-                        <th>Voltage</th>
+                        <th>Contacts</th>
+                        <th>Mounting</th>
+                        <th>Gender</th>
                         <th>Description</th>
                         <th>Part No</th>
                         <th>Manufacturer</th>
@@ -36,4 +37,4 @@ const TableIndicator = () => {
     )
 }
 
-export default TableIndicator
+export default TableConnectors

@@ -1,7 +1,7 @@
 import React from 'react'
-import {Table} from 'react-bootstrap'
+import { Table } from 'react-bootstrap'
 
-const TableIndicator = () => {
+const TableButton = ({data}) => {
     return (
         <div>
             <Table striped bordered hover responsive style={{marginTop: 15}}>
@@ -9,8 +9,8 @@ const TableIndicator = () => {
                     <tr>
                         <th>Item No</th>
                         <th>Type</th>
-                        <th>Color</th>
-                        <th>Voltage</th>
+                        <th>Poles</th>
+                        <th>Current</th>
                         <th>Description</th>
                         <th>Part No</th>
                         <th>Manufacturer</th>
@@ -32,8 +32,8 @@ const TableIndicator = () => {
                     ))}
                 </tbody>
             </Table>
-         </div>
+        </div>
     )
 }
 
-export default TableIndicator
+export default TableContactor
