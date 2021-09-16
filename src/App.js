@@ -11,21 +11,25 @@ import "./App.css"
 import NavTab from './pages/navTab';
 
 function App() {
-  const [quoteData, setQuoteData] = useState([]);
+  const [buttonData, setButtonData] = useState([])
   const [user, setUser] = useState("");
   const [color , setColor] = useState("#f9c5d1");
   const [auth, setAuth] = useState(false)
 
   useEffect(() =>{
     document.body.style.backgroundColor = color
-    socket.on("getButton" , data=>{
-      setQuoteData(data)
-      console.log(data);
+    socket.on("getAllQuote" , data=>{
+      //setQuoteData(data)
+
+      setButtonData(data.filter((btn) => (
+        btn.QUOTATION_TYPE === "Button"
+    )))
+        
     })
   })
   return (
   <div className="Background">
-    <globalItem.Provider value={{quoteData , user , setUser , setColor , auth, setAuth}}>
+    <globalItem.Provider value={{buttonData , user , setUser , setColor , auth, setAuth}}>
       <Router>
         <Switch>    
           <Route exact path="/">

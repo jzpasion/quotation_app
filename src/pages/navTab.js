@@ -6,8 +6,8 @@ import TableButton from '../component/tables/tableButton'
 
 
 const NavTab = ({auth}) => {
-    const {user ,quoteData} = useContext(globalItem);
-
+    const {user ,buttonData} = useContext(globalItem);
+    console.log(buttonData);
     if(!auth){
         return <Redirect to="/"/>
       }else{
@@ -15,7 +15,7 @@ const NavTab = ({auth}) => {
       
     return (
         <Container>
-            <TableButton data={quoteData} />
+            <TableButton data={buttonData} />
         </Container>
     //     <Tabs fill defaultActiveKey="inventory" id="uncontrolled-tab-example" className="mb-3">
     //         <Tab eventKey="inventory" title="Buttons">
