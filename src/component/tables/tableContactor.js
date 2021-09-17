@@ -1,7 +1,7 @@
 import React from 'react'
 import { Table } from 'react-bootstrap'
 
-const TableButton = ({data}) => {
+const TableContactor = ({data}) => {
     return (
         <div>
             <Table striped bordered hover responsive style={{marginTop: 15}}>
@@ -26,8 +26,20 @@ const TableButton = ({data}) => {
                 <tbody>
                     {data.map((resdata , index) =>(
                         <tr key={index}>
-                            {/* <td>resdata.ITEM_NUMBER</td>
-                            <td>resdata.type</td> */}
+                             <td>{resdata.ITEM_NUMBER}</td>
+                            <td>{resdata.TYPE}</td>
+                            <td>{resdata.POLES}</td>
+                            <td>{resdata.CURRENT}</td>
+                            <td>{resdata.DESCRIPTION}</td>
+                            <td>{resdata.PART_NUMBER}</td>
+                            <td>{resdata.MANUFACTURER}</td>
+                            <td>{resdata.SUPPLIER}</td>
+                            <td>{resdata.TU_EUR}</td>
+                            <td>{resdata.PRICE_PHP}</td>
+                            <td>{resdata.PRICE_EUR}</td>
+                            <td>{resdata.PRICE_USD}</td>
+                            <td>{resdata.WEIGHT}</td>
+                            <td>{resdata.DATASHEET}</td>
                         </tr>
                     ))}
                 </tbody>

@@ -28,6 +28,17 @@ const TableButton = ({data}) => {
                         <tr key={index}>
                             <td>{resdata.ITEM_NUMBER}</td>
                             <td>{resdata.TYPE}</td>
+                            <td>{resdata.COLOR}</td>
+                            <td>{resdata.DESCRIPTION}</td>
+                            <td>{resdata.PART_NUMBER}</td>
+                            <td>{resdata.MANUFACTURER}</td>
+                            <td>{resdata.SUPPLIER}</td>
+                            <td>{resdata.TU_EUR}</td>
+                            <td>{resdata.PRICE_PHP}</td>
+                            <td>{resdata.PRICE_EUR}</td>
+                            <td>{resdata.PRICE_USD}</td>
+                            <td>{resdata.WEIGHT}</td>
+                            <td>{resdata.DATASHEET}</td>
                             
                         </tr>
                     ))}
