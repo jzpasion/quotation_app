@@ -12,6 +12,7 @@ import NavTab from './pages/navTab';
 
 function App() {
   const [buttonData, setButtonData] = useState([])
+  const [indicatorData, setIndicatorData] = useState([])
   const [user, setUser] = useState("");
   const [color , setColor] = useState("#f9c5d1");
   const [auth, setAuth] = useState(false)
@@ -24,11 +25,16 @@ function App() {
         btn.QUOTATION_TYPE === "Button"
     )))
         
+    setIndicatorData(data.filter((indicator) =>(
+          indicator.QUOTATION_TYPE === "Indicator"
+        )))
+
+        
     })
   })
   return (
   <div className="Background">
-    <globalItem.Provider value={{buttonData , user , setUser , setColor , auth, setAuth}}>
+    <globalItem.Provider value={{buttonData , user , setUser , setColor , auth, setAuth ,indicatorData}}>
       <Router>
         <Switch>    
           <Route exact path="/">

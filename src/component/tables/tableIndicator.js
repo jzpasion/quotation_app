@@ -1,7 +1,7 @@
 import React from 'react'
 import {Table} from 'react-bootstrap'
 
-const TableIndicator = () => {
+const TableIndicator = ({data}) => {
     return (
         <div>
             <Table striped bordered hover responsive style={{marginTop: 15}}>
@@ -26,8 +26,8 @@ const TableIndicator = () => {
                 <tbody>
                     {data.map((resdata , index) =>(
                         <tr key={index}>
-                            {/* <td>resdata.ITEM_NUMBER</td>
-                            <td>resdata.type</td> */}
+                            <td>{resdata.ITEM_NUMBER}</td>
+                           
                         </tr>
                     ))}
                 </tbody>
