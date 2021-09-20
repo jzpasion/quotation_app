@@ -154,7 +154,7 @@ function App() {
   })
   return (
   <div className="Background">
-    <globalItem.Provider value={{buttonData , user , setUser , setColor , auth, setAuth ,indicatorData,accessoriesData,audioData,breakerData,connectorsData,consumableData,contactorData,controllerData, counterData, disconnectSwitchData, enclosureData, ethernetData, lightData, motorAccesoryData, motorDriverData, motor }}>
+    <globalItem.Provider value={{buttonData , user , setUser , setColor , auth, setAuth ,indicatorData,accessoriesData,audioData,breakerData,connectorsData,consumableData,contactorData,controllerData, counterData, disconnectSwitchData, enclosureData, ethernetData, lightData, motorAccesoryData, motorDriverData, motorData, powerSupplyData, relayData, sensorData, switchData, tempControlData, timerData, toolsData, waterEffectsData, wireData }}>
       <Router>
         <Switch>    
           <Route exact path="/">
