@@ -41,6 +41,32 @@ const NavTab = ({auth}) => {
         return <Redirect to="/"/>
       }else{
 
+        const ButtonDataSet = [
+            {
+                columns:[
+                    {title: "Mrs no",style: {font: {sz: "15", bold: true}}, width: {wpx: 125}},
+                    {title: "Code",style: {font: {sz: "15", bold: true}}, width: {wpx: 125}},
+                    {title: "Project Name",style: {font: {sz: "15", bold: true}}, width: {wpx: 125}},
+                    {title: "Description",style: {font: {sz: "15", bold: true}}, width: {wpx: 125}},
+                    {title: "Quantity",style: {font: {sz: "15", bold: true}}, width: {wpx: 125}},
+                    {title: "Unit",style: {font: {sz: "15", bold: true}}, width: {wpx: 125}},
+                    {title: "Unit cost",style: {font: {sz: "15", bold: true}}, width: {wpx: 125}},
+                    {title: "SubTotal",style: {font: {sz: "15", bold: true}}, width: {wpx: 125}},
+                    {title: "Date Delivered",style: {font: {sz: "15", bold: true}}, width: {wpx: 125}}
+                ],
+                data: buttonData.map((data) =>[
+                    {value: data.MRS_NUMBER, style: {font: {sz: "13"}}},
+                    {value: data.CODE, style: {font: {sz: "13"}}},
+                    {value: data.PROJECT_NAME, style: {font: {sz: "13"}}},
+                    {value: data.DESCRIPTION, style: {font: {sz: "13"}}},
+                    {value: data.QUANTITY, style: {font: {sz: "13"}}},
+                    {value: data.UNIT, style: {font: {sz: "13"}}},
+                    {value: data.UNIT_COST, style: {font: {sz: "13"}}},
+                    {value: data.SUB_TOTAL, style: {font: {sz: "13"}}},
+                    {value: data.DATE_DELIVERED, style: {font: {sz: "13"}}}
+                ])
+            }
+        ]
       
     return (
         <Container>
