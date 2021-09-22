@@ -33,7 +33,9 @@ import TableWire from '../component/tables/tableWire'
 
 
 const NavTab = ({auth}) => {
-    const {user ,buttonData , indicatorData,accessoriesData,audioData,breakerData,connectorsData,consumableData,contactorData,controllerData, counterData, disconnectSwitchData, enclosureData, ethernetData, lightData, motorAccesoryData, motorDriverData, motorData, powerSupplyData, relayData, sensorData, switchData, tempControlData, timerData, toolsData, waterEffectsData, wireData} = useContext(globalItem);
+    const {user ,buttonData , indicatorData,accessoriesData,audioData,breakerData,connectorsData,consumableData,contactorData,
+        controllerData, counterData, disconnectSwitchData, enclosureData, ethernetData, lightData, motorAccesoryData, motorDriverData,
+         motorData, powerSupplyData, relayData, sensorData, switchData, tempControlData, timerData, toolsData, waterEffectsData, wireData} = useContext(globalItem);
     console.log(contactorData);
     if(!auth){
         return <Redirect to="/"/>
